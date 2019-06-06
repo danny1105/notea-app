@@ -39,7 +39,7 @@ export default class CreateNote extends Component {
             note_completed: this.state.note_completed
         };
 
-        axios.post('http://localhost:4000/todos/add', newNote)
+        axios.post('http://localhost:5000/notes/add', newNote)
             .then(res => console.log(res.data));
         
         this.setState({
