@@ -43,7 +43,7 @@ noteRoutes.route('/update/:id').post(function(req, res) {
         else
             note.note_description = req.body.note_description;
             note.note_responsible = req.body.note_responsible;
-            todo.note_completed = req.body.note_completed;
+            note.note_completed = req.body.note_completed;
 
             note.save().then(note => {
                 res.json('Note updated!');

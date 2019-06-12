@@ -30,7 +30,7 @@ export default class TodosList extends Component {
             })
     }
 
-    todoList() {
+    noteList() {
         return this.state.notes.map(function(currentNote, i){
             return <Note note={currentNote} key={i} />;
         })
@@ -50,7 +50,7 @@ export default class TodosList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        { this.NoteList() }
+                        { this.noteList() }
                     </tbody>
                 </table>
             </div>
